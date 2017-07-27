@@ -5,7 +5,6 @@
   "main": "compote-fp.js",
   "types": "compote-fp.d.ts",
   "scripts": {
-    "prepublish": "npm run build",
     "build": "tsc",
     "test": "jest",
     "jest": "jest --watch"
