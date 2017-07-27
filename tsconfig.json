@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": false,
+
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationDir": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "*.test.ts"
+  ],
+  "include": [
+    "*.ts"
+  ]
+}
