@@ -1,6 +1,6 @@
 import 'jest';
 
-import { createArray, arrayize, map, first, last, unique } from './array';
+import { createArray, arrayize, map, first, last, unique, sum, avg } from './array';
 
 describe(`createArray`, () => {
   it(`should return an array`, () => {
@@ -64,6 +64,18 @@ describe(`last`, () => {
 
 describe(`unique`, () => {
   it(`should return unique items`, () => {
-    expect(unique([1, 2, 3, 4, 5, 2, 3, 1, 5, 6])).toEqual([1, 2, 3, 4, 5, 6]);
+    expect([1, 2, 3, 4, 5, 2, 3, 1, 5, 6].filter(unique)).toEqual([1, 2, 3, 4, 5, 6]);
+  });
+});
+
+describe(`sum`, () => {
+  it(`should return sum of all numbers`, () => {
+    expect(sum([1, 2, 3])).toBe(6);
+  });
+});
+
+describe(`avg`, () => {
+  it(`should return average of all numbers`, () => {
+    expect(avg([1, 2, 3])).toBe(2);
   });
 });

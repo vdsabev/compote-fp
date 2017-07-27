@@ -1,6 +1,6 @@
 import 'jest';
 
-import { add, sub, mul, div, div0, mod, sum, avg } from './math';
+import { add, sub, mul, div, div0, mod } from './math';
 
 describe(`add`, () => {
   it(`should add numbers`, () => {
@@ -47,17 +47,5 @@ describe(`mod`, () => {
 
   it(`should return 0 for modulo 1`, () => {
     expect(mod(1)(10)).toBe(0);
-  });
-});
-
-describe(`sum`, () => {
-  it(`should return sum of all numbers`, () => {
-    expect(sum([1, 2, 3])).toBe(6);
-  });
-});
-
-describe(`avg`, () => {
-  it(`should return average of all numbers`, () => {
-    expect(avg([1, 2, 3])).toBe(2);
   });
 });

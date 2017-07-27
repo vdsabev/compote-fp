@@ -1,6 +1,6 @@
 {
   "name": "compote-fp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "compote-fp.js",
   "types": "compote-fp.d.ts",

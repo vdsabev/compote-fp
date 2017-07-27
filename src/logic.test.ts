@@ -1,9 +1,8 @@
 import 'jest';
 
-import { createArray } from './array';
+import { createArray, sum } from './array';
 import { eq } from './compare';
 import { pipe } from './combinator';
-import { sum } from './math';
 
 import { all, any } from './logic';
 
